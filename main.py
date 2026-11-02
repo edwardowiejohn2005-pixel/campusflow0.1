@@ -1,11 +1,11 @@
 import json
 
 def Load_Ticket(tickets):
-#    try:
+    try:
      with open("ticket.json", "r")as file:
         ticket = json.load(file)
         print(ticket)
- #   except FileNotFoundError:
+    except FileNotFoundError:
         return []
 
 def Save_Ticket(ticket):
